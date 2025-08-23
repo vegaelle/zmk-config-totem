@@ -85,7 +85,7 @@
             bindings = <
                        &kp Q            &kp W        &kp E         &kp R          &kp T                 &kp Y              &kp U        &kp I         &kp O            &kp P
                        &HRM LEFT_WIN A  &HRM LALT S  &HRM LCTRL D  &HRM RALT F    &kp G                 &kp H              &HRM RALT J  &HRM RCTRL K  &HRM LEFT_ALT L  &HRM RIGHT_WIN SEMICOLON
-&mt LEFT_SHIFT ESCAPE  &kp Z            &kp X        &kp C         &kp V          &kp B                 &kp N              &kp M        &kp COMMA     &kp DOT          &kp FSLH                  &kp BSLH
+&mt LEFT_SHIFT ESCAPE  &kp Z            &kp X        &kp C         &kp V          &kp B                 &kp N              &kp M        &kp COMMA     &kp DOT          &kp FSLH                  &kp C_MENU
                                                      &mo 1         &kp BACKSPACE  &mt LEFT_SHIFT TAB    &mt RIGHT_ALT RET  &kp SPACE    &mo 2
             >;
         };
@@ -131,10 +131,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp LEFT_CONTROL  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP      &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp END    &none
-            &kp LSHFT         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none
-&kp K_MENU  &kp INS           &mkp MB4        &kp CAPS        &mkp MB5         &kp BACKSPACE     &kp DELETE     &none           &none           &none      &none  &kp PRINTSCREEN
-                                              &mkp LCLK       &mkp MB3         &mkp RCLK         &mo 3          &none           &trans
+              &kp LEFT_CONTROL  &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP      &kp PG_UP      &kp HOME        &kp UP_ARROW    &kp END    &none
+              &kp LSHFT         &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp INS
+&kp LEFT_ALT  &kp LEFT_WIN      &mkp MB4        &kp CAPS        &mkp MB5         &kp BACKSPACE     &kp DELETE     &kp TAB         &kp TILDE       &kp CAPS   &none    &kp PRINTSCREEN
+                                                &mkp LCLK       &mkp MB3         &mkp RCLK         &mo 3          &none           &trans
             >;
         };
 
