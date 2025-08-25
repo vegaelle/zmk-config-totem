@@ -44,6 +44,12 @@
             bindings = <&tog 3>;
             key-positions = <20 31>;
         };
+
+        combo_quotes {
+            bindings = <&quotes>;
+            key-positions = <1 2>;
+            layers = <1>;
+        };
     };
 
     behaviors {
@@ -57,6 +63,15 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <265>;
             flavor = "balanced";
+        };
+    };
+
+    macros {
+        quotes: quotes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(NUMBER_2) &kp LS(SPACE) &kp LS(SPACE) &kp LS(NUMBER_3) &kp LEFT_ARROW &kp LEFT_ARROW>;
+            label = "QUOTES";
         };
     };
 
