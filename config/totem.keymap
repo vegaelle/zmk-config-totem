@@ -50,6 +50,11 @@
             key-positions = <1 2>;
             layers = <1>;
         };
+
+        combo_hyper {
+            bindings = <&kp LS(LA(LG(LEFT_CONTROL)))>;
+            key-positions = <26 27 16 15>;
+        };
     };
 
     behaviors {
