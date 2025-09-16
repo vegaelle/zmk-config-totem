@@ -26,7 +26,7 @@
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
-    flavor = "tap-preferred";
+    flavor = "hold-preferred";
     tapping-term-ms = <170>;
 };
 
@@ -53,7 +53,7 @@
 
         combo_hyper {
             bindings = <&kp LS(LA(LG(LEFT_CONTROL)))>;
-            key-positions = <26 27 16 15>;
+            key-positions = <26 15>;
         };
 
         combo_tab {
@@ -69,6 +69,11 @@
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <13 24>;
+        };
+
+        combo_hyper2 {
+            bindings = <&kp LS(LA(LG(LEFT_CONTROL)))>;
+            key-positions = <32 33>;
         };
     };
 
