@@ -36,7 +36,7 @@
 
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 10>;
+            key-positions = <10 11 12>;
             bindings = <&kp ESC>;
         };
 
@@ -73,7 +73,7 @@
 
         combo_hyper2 {
             bindings = <&kp LS(LA(LG(LEFT_CONTROL)))>;
-            key-positions = <32 33>;
+            key-positions = <33 34>;
         };
     };
 
