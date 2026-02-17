@@ -178,9 +178,9 @@
 
         gaming {
             bindings = <
-                     &kp TAB           &kp Q  &kp T            &kp D      &kp J         &kp K   &kp P   &kp SEMICOLON  &kp L      &kp E
-                     &kp LEFT_SHIFT    &kp A  &kp S            &kp I      &kp G         &kp M   &kp N   &kp Y          &kp SLASH  &kp H
-&mt LEFT_ALT ESCAPE  &kp LEFT_CONTROL  &kp Z  &kp X            &kp W      &kp V         &kp B   &kp F   &kp U          &kp COMMA  &kp RA(I)  &kp F12
+                     &kp TAB           &kp Q  &kp T            &kp D      &kp J         &kp K   &kp P   &kp SEMICOLON  &kp L       &kp E
+                     &kp LEFT_SHIFT    &kp A  &kp S            &kp I      &kp G         &kp M   &kp Y   &kp SLASH      &kp H       &kp R
+&mt LEFT_ALT ESCAPE  &kp LEFT_CONTROL  &kp Z  &kp X            &kp W      &kp V         &kp B   &kp F   &kp U          &kp PERIOD  &kp N  &kp F12
                                               &lt 4 BACKSPACE  &kp SPACE  &kp DELETE    &trans  &trans  &trans
             >;
         };
