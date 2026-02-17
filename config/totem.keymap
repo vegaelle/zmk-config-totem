@@ -70,6 +70,11 @@
             bindings = <&kp LS(LA(LG(LEFT_CONTROL)))>;
             key-positions = <33 34>;
         };
+
+        toggle_gaming {
+            bindings = <&tog 5>;
+            key-positions = <27 28 29 30>;
+        };
     };
 
     behaviors {
@@ -79,8 +84,9 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             flavor = "tap-preferred";
+            quick-tap-ms = <200>;
         };
     };
 
@@ -200,6 +206,24 @@
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        gaming {
+            bindings = <
+                     &kp TAB           &kp Q  &kp T            &kp D      &kp J         &kp K   &kp P   &kp SEMICOLON  &kp L      &kp E
+                     &kp LEFT_SHIFT    &kp A  &kp S            &kp I      &kp G         &kp M   &kp N   &kp Y          &kp SLASH  &kp H
+&mt LEFT_ALT ESCAPE  &kp LEFT_CONTROL  &kp Z  &kp X            &kp W      &kp V         &kp B   &kp F   &kp U          &kp COMMA  &kp RA(I)  &kp F12
+                                              &lt 6 BACKSPACE  &kp SPACE  &kp DELETE    &trans  &trans  &trans
+            >;
+        };
+
+        gaming2 {
+            bindings = <
+        &trans  &kp N1  &kp N2  &kp N3  &trans    &kp F1     &kp F2     &kp F3    &kp F4   &trans
+        &trans  &kp N4  &kp N5  &kp N6  &trans    &kp F5     &kp F6     &kp F7    &kp F8   &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0    &kp F9     &kp F10    &kp F11   &kp F12  &trans  &trans
+                        &trans  &trans  &trans    &kp LSHFT  &kp LCTRL  &kp LALT
             >;
         };
 
