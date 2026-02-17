@@ -41,7 +41,7 @@
         };
 
         combo_settings {
-            bindings = <&tog 3>;
+            bindings = <&tog 5>;
             key-positions = <20 31>;
         };
 
@@ -72,7 +72,7 @@
         };
 
         toggle_gaming {
-            bindings = <&tog 5>;
+            bindings = <&tog 3>;
             key-positions = <27 28 29 30>;
         };
     };
@@ -176,7 +176,25 @@
             >;
         };
 
-        adjust_layer {
+        gaming {
+            bindings = <
+                     &kp TAB           &kp Q  &kp T            &kp D      &kp J         &kp K   &kp P   &kp SEMICOLON  &kp L      &kp E
+                     &kp LEFT_SHIFT    &kp A  &kp S            &kp I      &kp G         &kp M   &kp N   &kp Y          &kp SLASH  &kp H
+&mt LEFT_ALT ESCAPE  &kp LEFT_CONTROL  &kp Z  &kp X            &kp W      &kp V         &kp B   &kp F   &kp U          &kp COMMA  &kp RA(I)  &kp F12
+                                              &lt 4 BACKSPACE  &kp SPACE  &kp DELETE    &trans  &trans  &trans
+            >;
+        };
+
+        gaming2 {
+            bindings = <
+        &trans  &kp N1  &kp N2  &kp N3  &trans    &kp F1     &kp F2     &kp F3    &kp F4   &trans
+        &trans  &kp N4  &kp N5  &kp N6  &trans    &kp F5     &kp F6     &kp F7    &kp F8   &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0    &kp F9     &kp F10    &kp F11   &kp F12  &trans  &trans
+                        &trans  &trans  &trans    &kp LSHFT  &kp LCTRL  &kp LALT
+            >;
+        };
+
+        settings {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "ADJ";
@@ -197,33 +215,6 @@
        &bootloader   &bt BT_PRV    &bt BT_NXT    &trans        &bt BT_CLR        &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                    &to 0         &to 1         &to 2             &trans  &trans  &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        gaming {
-            bindings = <
-                     &kp TAB           &kp Q  &kp T            &kp D      &kp J         &kp K   &kp P   &kp SEMICOLON  &kp L      &kp E
-                     &kp LEFT_SHIFT    &kp A  &kp S            &kp I      &kp G         &kp M   &kp N   &kp Y          &kp SLASH  &kp H
-&mt LEFT_ALT ESCAPE  &kp LEFT_CONTROL  &kp Z  &kp X            &kp W      &kp V         &kp B   &kp F   &kp U          &kp COMMA  &kp RA(I)  &kp F12
-                                              &lt 6 BACKSPACE  &kp SPACE  &kp DELETE    &trans  &trans  &trans
-            >;
-        };
-
-        gaming2 {
-            bindings = <
-        &trans  &kp N1  &kp N2  &kp N3  &trans    &kp F1     &kp F2     &kp F3    &kp F4   &trans
-        &trans  &kp N4  &kp N5  &kp N6  &trans    &kp F5     &kp F6     &kp F7    &kp F8   &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0    &kp F9     &kp F10    &kp F11   &kp F12  &trans  &trans
-                        &trans  &trans  &trans    &kp LSHFT  &kp LCTRL  &kp LALT
             >;
         };
 
