@@ -10,7 +10,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &default_layout;
+        zmk,physical-layout = &totem_layout;
         // zmk,matrix_transform = &default_transform;
     };
 
